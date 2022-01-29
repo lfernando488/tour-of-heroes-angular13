@@ -1,3 +1,14 @@
-<h1>Tour of heroes </h1>
+<mat-toolbar color="primary">
+  <span>Tour of heroes </span>
+  <span class="example-spacer"></span>
+    <button mat-icon-button aria-label="Heroes list" routerLink="/heroes" matTooltip="heroes">
+      <mat-icon>sports_martial_arts</mat-icon>
+    </button>
+</mat-toolbar>
 
-<app-heroes></app-heroes>
+<div class="content">
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
+</div>
+
+
